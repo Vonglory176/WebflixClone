@@ -1,1 +1,17 @@
-/*# sourceMappingURL=main.css.map */
+@import 'bootstrap/dist/css/bootstrap.css';
+#landing-section header {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+}
+#landing-section header img {
+  width: 89px;
+}
+#landing-section header div {
+  display: flex;
+}
+#landing-section main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
