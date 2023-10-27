@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import Header from './components/header.jsx'
 import Landing from './components/Landing.jsx'
-// import './App.css'
 
 function App() {
 
   return (
     <>
+      <Header/>
       <Landing/>
     </>
   )
