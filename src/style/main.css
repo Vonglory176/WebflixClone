@@ -1,17 +1,141 @@
 @import 'bootstrap/dist/css/bootstrap.css';
-#landing-section header {
+body {
+  background-color: black;
+}
+
+* {
+  font-family: "Netflix Sans", Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+button {
+  background-color: rgb(229, 9, 20) !important;
+  border: 0 !important;
+}
+
+.languageSelector-div {
+  position: relative;
+}
+.languageSelector-div img {
+  position: absolute;
+  top: 8.5px;
+  left: 10px;
+}
+.languageSelector-div .form-select {
+  transition: none;
+  color: white;
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  height: 32px;
+  width: 64px;
+  padding: 6px 28px 6px 36px;
+}
+.languageSelector-div .form-select:focus {
+  border-color: white;
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 100;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 300;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 400;
+  src: url(../assets/fonts/NetflixSans_W_Rg.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 500;
+  src: url(../assets/fonts/NetflixSans_W_Md.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 700;
+  src: url(../assets/fonts/NetflixSans_W_Bd.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 900;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff");
+}
+#header-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#header-section header {
   display: flex;
   padding: 24px;
   justify-content: space-between;
+  align-items: center;
 }
-#landing-section header img {
+#header-section header > img {
   width: 89px;
+  height: 1.5rem;
 }
-#landing-section header div {
+#header-section header .languageSelector-div {
   display: flex;
+  gap: 0.5rem;
+}
+#header-section header button {
+  padding: 0.25rem 1rem;
+}
+
+#landing-section {
+  position: relative;
+  padding: 7.5rem 0 2rem;
+  overflow: hidden;
+}
+#landing-section #landingBackground-div .backgroundGradient-div {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+#landing-section #landingBackground-div img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#landing-section main {
+  margin: 24px;
 }
 #landing-section main form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }/*# sourceMappingURL=main.css.map */
