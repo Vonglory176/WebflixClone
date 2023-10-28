@@ -16,9 +16,13 @@
             height: 1.5rem;
         }
 
-        .languageSelector-div {
+        .buttonGroup-div {
             display: flex;
             gap:0.5rem;
+
+            .languageSelector-div {
+                width: 64px;
+            }
         }
 
         button {
