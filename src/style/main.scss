@@ -20,6 +20,7 @@ p {
 button {
     background-color: rgb(229,9,20) !important;
     border: 0 !important;
+    --bs-btn-border-radius: 0.1875rem !important;
 }
 
 .languageSelector-div {
@@ -27,13 +28,11 @@ button {
 
     img {
         position: absolute;
-        top: 8.5px;
-        left:10px;
+        top: 7.5px;
+        left:14px;
     }
 
     .form-select {
-        transition: none;
-        color: white;
         --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
         &:focus {border-color: white}
         height: 32px;
@@ -43,8 +42,9 @@ button {
 }
 
 input, select {
-    // background: rgba(22,22,22,0.7) !important;
-    // border-color: rgba(128,128,128,0.7) !important;
+    background-color: rgba(22,22,22,0.7) !important;
+    transition: none;
+    // border-color: rgba(128,128,128,0.7);
     // color: white !important;
 }
 
@@ -52,3 +52,4 @@ input, select {
 @import './fonts.scss';
 @import './header';
 @import './landing.scss';
+@import './adBanner.scss';
