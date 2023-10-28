@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/header.jsx'
 import Landing from './components/Landing.jsx'
+import AdBanner from './components/AdBanner.jsx'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header/>
       <Landing/>
+      <AdBanner/>
     </>
   )
 }
