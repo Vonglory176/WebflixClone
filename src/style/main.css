@@ -23,6 +23,7 @@ p {
 button {
   background-color: rgb(229, 9, 20) !important;
   border: 0 !important;
+  --bs-btn-border-radius: 0.1875rem !important;
 }
 
 .languageSelector-div {
@@ -30,12 +31,10 @@ button {
 }
 .languageSelector-div img {
   position: absolute;
-  top: 8.5px;
-  left: 10px;
+  top: 7.5px;
+  left: 14px;
 }
 .languageSelector-div .form-select {
-  transition: none;
-  color: white;
   --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   height: 32px;
   width: 64px;
@@ -45,38 +44,37 @@ button {
   border-color: white;
 }
 
+input, select {
+  background-color: rgba(22, 22, 22, 0.7) !important;
+  transition: none;
+}
+
 @font-face {
-  font-display: optional;
   font-family: Netflix Sans;
   font-weight: 100;
   src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff");
 }
 @font-face {
-  font-display: optional;
   font-family: Netflix Sans;
   font-weight: 300;
   src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff");
 }
 @font-face {
-  font-display: optional;
   font-family: Netflix Sans;
   font-weight: 400;
   src: url(../assets/fonts/NetflixSans_W_Rg.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff");
 }
 @font-face {
-  font-display: optional;
   font-family: Netflix Sans;
   font-weight: 500;
   src: url(../assets/fonts/NetflixSans_W_Md.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff");
 }
 @font-face {
-  font-display: optional;
   font-family: Netflix Sans;
   font-weight: 700;
   src: url(../assets/fonts/NetflixSans_W_Bd.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff");
 }
 @font-face {
-  font-display: optional;
   font-family: Netflix Sans;
   font-weight: 900;
   src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff");
@@ -104,6 +102,7 @@ button {
 }
 #header-section header button {
   padding: 0.25rem 1rem;
+  font-weight: 500;
 }
 
 #landing-section {
@@ -112,7 +111,7 @@ button {
   overflow: hidden;
 }
 #landing-section #landingBackground-div .backgroundGradient-div {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.8) 100%);
   z-index: -1;
   position: absolute;
   top: 0;
@@ -131,11 +130,35 @@ button {
      object-fit: cover;
 }
 #landing-section main {
-  margin: 24px;
+  margin: 0 24px;
 }
-#landing-section main form {
+#landing-section main .emailCallToAction-div {
+  padding: 0 24px;
+}
+#landing-section main .emailCallToAction-div form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
+}
+#landing-section main .emailCallToAction-div form input {
+  width: 100%;
+}
+#landing-section main .emailCallToAction-div form button {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+#adBanner-section #adBanner-div {
+  background: radial-gradient(120.35% 220% at 49.86% -6.29%, #e50914 0%, #0e1b4f 46.15%, #0d1121 100%);
+  padding: 50px 30px 30px 30px;
+  margin: 16px 24px 0 24px;
+  position: relative;
+}
+#adBanner-section #adBanner-div > img {
+  position: absolute;
+  width: 76.8px;
+  top: -38px;
+}
+#adBanner-section #adBanner-div p {
+  text-align: start;
 }/*# sourceMappingURL=main.css.map */
