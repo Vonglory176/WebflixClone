@@ -6,7 +6,7 @@
     #landingBackground-div {
 
         .backgroundGradient-div {
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.8) 100%);
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.8) 90%);
             // background-color: rgb(0 0 0 / 40%);
             z-index: -1;
             position: absolute;
@@ -29,24 +29,28 @@
 
     main {
         margin: 0 24px;
-        .emailCallToAction-div {
-            padding: 0 24px;
-            form {
-                display: flex;
-                flex-direction: column;
-                gap:1rem;
+        // .emailCallToAction-div {
+        //     margin-top: 24px;
+        //     padding: 0 24px;
+        //     form {
+        //         display: flex;
+        //         flex-direction: column;
+        //         gap:1rem;
 
-                input {width: 100%;}
-                button {
-                    display: flex;
-                    align-items: center;
-                    margin: auto;
-                    img {
-                        // color: white;
-                        // fill: white;
-                    }
-                }
-            }
-        }
+        //         input {
+        //             width: 100%;
+        //             padding: 20px 16px 4px 16px;
+        //         }
+        //         button {
+        //             display: flex;
+        //             align-items: center;
+        //             margin: auto;
+        //             // img {
+        //                 // color: white;
+        //                 // fill: white;
+        //             // }
+        //         }
+        //     }
+        // }
     }
 }
