@@ -1,0 +1,22 @@
+footer {
+    margin:32px 0;
+    padding: 0 24px;
+
+            
+    a, span {color:rgba(255,255,255,0.7);}
+
+    .phoneInformation-div {
+        margin-bottom:12px;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 12px;
+
+        a {
+            font-size: 14px;
+            &:focus {color: rgb(229,9,20)}
+        }
+    }
+}
