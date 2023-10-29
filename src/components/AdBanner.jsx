@@ -8,7 +8,7 @@ export default function AddBanner() {
                 <img src={Popcorn}/>
                 <p>The Netflix you love for just $6.99.</p>
                 <p>Get the Standard with ads plan.</p>
-                <a><span>Learn More</span> <img src={RightArrow}/></a>
+                <a href="#">Learn More <img src={RightArrow}/></a>
             </div>
         </section>
     )
