@@ -76,10 +76,11 @@ export default function FeaturesAndQuestions() {
                     <div className="contentWrap-div">
                         <h1>Enjoy on your TV</h1>
                         <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
-                        <div className="featureImage-div">
+                        <div id="tvFeatureImage-div" className="featureImage-div">
                             <img src={TVImage} className="img-fluid"/>
-                            <div className="videoWrapper-div"></div>
-                            <video src={TVVideo} muted loop autoPlay/>
+                            <div className="videoWrapper-div">
+                                <video src={TVVideo} muted loop autoPlay/>
+                            </div>
                         </div>
                     </div>
                     <div className="separator-div"></div>      
@@ -89,9 +90,11 @@ export default function FeaturesAndQuestions() {
                     <div className="contentWrap-div">
                         <h1>Watch everywhere</h1>
                         <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-                        <div className="featureImage-div">
+                        <div id="watchFeatureImage-div" className="featureImage-div">
                             <img src={WatchImage} className="img-fluid"/>
-                            <video src={WatchVideo} muted loop autoPlay/>
+                            <div className="videoWrapper-div">
+                                <video src={WatchVideo} muted loop autoPlay/>
+                            </div>
                         </div>
                     </div>
                     <div className="separator-div"></div>
@@ -100,7 +103,7 @@ export default function FeaturesAndQuestions() {
                 <div id="createFeature-div" className="feature-div">
                     <div className="contentWrap-div">
                         <h1>Create profiles for kids</h1>
-                        <p>Send kids on adventures with their favorite characters in a space made just for them free with your membership.</p>
+                        <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
                         <div className="featureImage-div">
                             <img src={CreateImage} className="img-fluid"/>
                         </div>
