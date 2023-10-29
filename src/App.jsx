@@ -19,3 +19,13 @@ function App() {
 }
 
 export default App
+
+/*
+TODO
+-------------------
+Button color highights and animations need work
+Email input needs an animated label
+SVG coloring for arrows, plus and other need to be fixed
+Weird border coloring issue with accordions
+Language selector needs tweaks, specifically its dropdown (placement/colors)
+*/
