@@ -20,14 +20,27 @@
             display: flex;
             gap:0.5rem;
 
-            .languageSelector-div {
-                width: 64px;
-            }
+            // .languageSelector-div {width: 64px;}
         }
 
         button {
             padding: 0.25rem 1rem;
             font-weight: 500;
         }
+    }
+}
+
+@media screen and (max-width:599px) {
+    .languageSelector-div {
+        width: 64px;
+        .form-select {
+            padding: 6px 27px 6px 35px;
+        }
+    }
+}
+
+@media screen and (min-width:600px) {
+    #header-section {
+        header {padding:24px 32px}
     }
 }
