@@ -4,9 +4,17 @@
     overflow: hidden;
 
     #landingBackground-div {
+        background-image: url("../assets/images/US-en-20231016-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+        background-size: cover;        
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
 
         .backgroundGradient-div {
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.8) 90%);
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.85) 90%);
             // background-color: rgb(0 0 0 / 40%);
             z-index: -1;
             position: absolute;
@@ -15,22 +23,31 @@
             right: 0;
             left: 0;
         }
-
-        img {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            height: 100%;
-            width: auto;
-            z-index: -2;
-            object-fit: cover;
-        }
     }
 
     main {
         margin: 0 24px;
         .emailSignUp-div {
             margin-top: 24px;
+        }
+    }
+}
+
+@media screen and (min-width:600px) {
+    #landing-section {
+        padding: 8.5rem 0 3rem;
+
+        #landingBackground-div {
+            background-image: url("../assets/images/US-en-20231016-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+            transform: scale(1.25) translateY(-10%);
+
+            .backgroundGradient-div {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.85) 80%);              
+            }
+        }
+
+        main {
+            margin: 49.5px 32px;
         }
     }
 }
