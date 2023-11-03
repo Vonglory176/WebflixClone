@@ -12,7 +12,7 @@ export default function Footer() {
                 <li><a href="#">Investor Relations</a></li>
                 <li><a href="#">Jobs</a></li>
                 <li><a href="#">Netflix Shop</a></li>
-                <li><a href="#">Reedeem Gift Cards</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
                 <li><a href="#">Buy Gift Cards</a></li>
                 <li><a href="#">Ways to Watch</a></li>
                 <li><a href="#">Terms of Use</a></li>
