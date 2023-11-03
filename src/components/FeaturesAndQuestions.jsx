@@ -22,7 +22,7 @@ export default function FeaturesAndQuestions() {
             title:<span>What is Netflix?</span>,
             body:<span>
                     <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
-                    <p>You can watch as much as you want, whenever you want all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                    <p>You can watch as much as you want, whenever you want - all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
                 </span>
         },
         {
