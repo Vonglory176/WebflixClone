@@ -9,18 +9,25 @@ footer {
     }
 
     .phoneInformation-div {
-        margin-bottom:12px;
+        margin-bottom:1rem;
     }
 
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 16px 12px;
+        gap: 11px 12px;
+        margin-bottom: 1.5rem;
 
         a {
             font-size: 14px;
             font-weight: 300;
             &:focus {color: rgb(229,9,20)}
         }
+    }
+}
+
+@media screen and (min-width:600px) {
+    footer {
+        padding: 0 32px;
     }
 }
