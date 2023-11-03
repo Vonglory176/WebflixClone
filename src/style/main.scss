@@ -11,18 +11,24 @@ h1 {
     font-weight: 700;
     font-size: 2rem;
     margin:0;
-    line-height: 1.3;
+    line-height: 1.25;
 }
 
-h3 {line-height: 1.5;}
+h3 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0;
+}
+
+p {
+    font-weight: 400;
+    margin: 1.25rem 0 0 0;
+    line-height: 1.25;
+}
 
 h3, p {
     text-align: center;
     font-size: 1.125rem;
-    font-weight: 300;
-
-    &:is(h3) {margin: 0;}
-    &:is(p) {margin: 1rem 0 0 0;}
 }
 
 .btn {
@@ -72,7 +78,7 @@ h3, p {
         p {
             text-align: left;
             font-weight: 300;
-            line-height: 1.4;
+            line-height: 1.25;
             &:first-child{margin-top: 0;}
         }
     }
