@@ -5,10 +5,12 @@ export default function AddBanner() {
     return (
         <section id="adBanner-section">
             <div id="adBanner-div">
-                <img src={Popcorn}/>
-                <p>The Netflix you love for just $6.99.</p>
-                <p>Get the Standard with ads plan.</p>
-                <a href="#">Learn More <img src={RightArrow}/></a>
+                <img src={Popcorn} id="adPopcorn-img"/>
+                <div id="adContentWrapper-div">
+                    <p>The Netflix you love for just $6.99.</p>
+                    <p>Get the Standard with ads plan.</p>
+                    <a href="#">Learn More <img src={RightArrow}/></a>
+                </div>
             </div>
         </section>
     )
