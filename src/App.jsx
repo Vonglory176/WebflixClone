@@ -33,10 +33,12 @@ Check for more media queries between 655px and 959px
 
 Later!
 ------
-Button color highights and animations need work
-Email input needs an animated label
+Check email input sizing issue
+Weird sizing issues with feature content sections
 SVG coloring for arrows, plus and other need to be fixed
 Weird border coloring issue with accordions
+Button color highights and animations need work
+Email input needs an animated label
 Language selector needs tweaks, specifically its dropdown (placement/colors)
 
 Check image margin/padding in "Download" feature section 
