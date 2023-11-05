@@ -25,7 +25,7 @@ Major breakpoints at: 600px, 960px, 1280px, 1920px
 
 TODO
 -------------------
-Now!
+Right now!
 ------
 Start expanding into the next viewport (600px-959px)
 Create second view for AdBanner at screen width 655px
