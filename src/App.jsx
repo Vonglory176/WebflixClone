@@ -27,19 +27,16 @@ TODO
 -------------------
 Right now!
 ------
-Start expanding into the next viewport (600px-959px)
-Create second view for AdBanner at screen width 655px
-Check for more media queries between 655px and 959px
+Start expanding into the next viewport (1280px-1920px)
 
 Later!
 ------
 Check email input sizing issue
-Weird sizing issues with feature content sections
-SVG coloring for arrows, plus and other need to be fixed
-Weird border coloring issue with accordions
 Button color highights and animations need work
 Email input needs an animated label
 Language selector needs tweaks, specifically its dropdown (placement/colors)
+Convert feature-divs & question-divs to a proper component
+Change paragraph spacing in acordion
 
 Check image margin/padding in "Download" feature section 
 Check landing section gradient media queries
