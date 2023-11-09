@@ -5,6 +5,9 @@ body {
 
 * {
   font-family: "Netflix Sans", Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+h1, h3, p, span {
   color: white;
 }
 
@@ -17,22 +20,34 @@ h1 {
 }
 
 h3 {
+  text-align: center;
+  font-size: 1.125rem;
   line-height: 1.5;
   font-weight: 300;
   margin: 0;
 }
 
 p {
+  text-align: center;
+  font-size: 1.125rem;
   font-weight: 400;
   margin: 16px 0 0 0;
   line-height: 1.25;
 }
 
-h3, p {
-  text-align: center;
-  font-size: 1.125rem;
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 24px;
+  }
 }
-
 .btn {
   border: 0 !important;
   --bs-btn-border-radius: 0.1875rem !important;
@@ -55,11 +70,12 @@ h3, p {
   padding: 24px;
 }
 .accordion .accordion-button::after {
-  background-image: url("../assets/images/plusIcon.svg") !important;
+  background-image: url("../assets/images/plusIcon.svg");
   background-size: 24px;
   width: 24px;
   height: 24px;
   transition: none;
+  filter: invert(1); /* This will make the SVG white */
 }
 .accordion .accordion-button:focus {
   box-shadow: none;
@@ -67,6 +83,16 @@ h3, p {
 }
 .accordion .accordion-button:not(.collapsed)::after {
   rotate: -45deg;
+}
+@media screen and (min-width: 960px) {
+  .accordion .accordion-button {
+    font-size: 24px;
+  }
+  .accordion .accordion-button::after {
+    background-size: 36px;
+    width: 36px;
+    height: 36px;
+  }
 }
 .accordion .accordion-body {
   background-color: rgb(45, 45, 45);
@@ -201,7 +227,7 @@ li {
     grid-template-columns: 1fr 209px;
     grid-template-rows: 56px;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: 8px;
   }
   .emailSignUp-div form input {
     padding: 22px 16px 8px 16px;
@@ -238,12 +264,11 @@ li {
   padding: 0.25rem 1rem;
   font-weight: 500;
 }
-
 @media screen and (max-width: 599px) {
-  .languageSelector-div {
+  #header-section .languageSelector-div {
     width: 64px;
   }
-  .languageSelector-div .form-select {
+  #header-section .languageSelector-div .form-select {
     padding: 6px 27px 6px 35px;
   }
 }
@@ -252,6 +277,23 @@ li {
     padding: 24px 32px;
   }
 }
+@media screen and (min-width: 960px) {
+  #header-section header > img {
+    height: 40px;
+    width: auto;
+  }
+  #header-section header .buttonGroup-div {
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #header-section header {
+    max-width: calc(90% - 6rem);
+    padding: 24px 48px;
+    margin: auto;
+  }
+}
+
 #landing-section {
   position: relative;
   padding: 7.5rem 0 2rem;
@@ -295,12 +337,22 @@ li {
   #landing-section #landingBackground-div {
     background-image: url("../assets/images/US-en-20231016-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
     transform: scale(1.25) translateY(-10%);
+    background-position: center;
   }
   #landing-section #landingBackground-div .backgroundGradient-div {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.85) 80%);
   }
   #landing-section main {
     max-width: calc(100% - 4rem);
+  }
+}
+@media screen and (min-width: 960px) {
+  #landing-section {
+    padding: 9.875rem 0 4rem;
+    min-height: 43.75rem;
+  }
+  #landing-section #landingBackground-div {
+    background-image: url("../assets/images/US-en-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg");
   }
 }
 #adBanner-section #adBanner-div {
@@ -333,8 +385,10 @@ li {
   color: #448ef4;
   font-weight: 500;
 }
-#adBanner-section #adBanner-div #adContentWrapper-div a img {
+#adBanner-section #adBanner-div #adContentWrapper-div a svg {
+  margin-top: -4px;
   margin-left: 8px;
+  color: #448ef4 !important;
 }
 
 @media screen and (min-width: 599px) {
@@ -373,6 +427,13 @@ li {
   }
   #adBanner-section #adBanner-div #adContentWrapper-div a img {
     margin-left: 8px;
+  }
+}
+@media screen and (min-width: 960px) {
+  #adBanner-section {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
   }
 }
 #featuresAndQuestions-section #features-div .feature-div {
@@ -467,6 +528,9 @@ li {
 }
 
 @media screen and (min-width: 600px) {
+  #featuresAndQuestions-section #features-div .feature-div {
+    padding: 72px 0;
+  }
   #featuresAndQuestions-section #features-div #downloadFeature-div .contentWrap-div .featureImage-div .imageInner-div {
     display: grid;
     grid-template-columns: 64px 2.2fr 48px;
@@ -484,9 +548,64 @@ li {
   }
   #featuresAndQuestions-section #questions-div {
     position: relative;
+    padding: 72px 0;
   }
   #featuresAndQuestions-section #questions-div .contentWrap-div {
     margin: 0 32px;
+  }
+}
+@media screen and (min-width: 960px) {
+  #featuresAndQuestions-section #features-div .feature-div .contentWrap-div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 0 32px;
+  }
+  #featuresAndQuestions-section #features-div .feature-div .contentWrap-div .featureTitle-div h1, #featuresAndQuestions-section #features-div .feature-div .contentWrap-div .featureTitle-div p {
+    text-align: left;
+  }
+  #featuresAndQuestions-section #features-div .feature-div .contentWrap-div .featureTitle-div p {
+    margin-bottom: 0;
+  }
+  #featuresAndQuestions-section #features-div .feature-div:nth-child(even) .contentWrap-div .featureTitle-div {
+    grid-area: 1/2/span 1/span 1;
+  }
+  #featuresAndQuestions-section #features-div .feature-div:nth-child(even) .contentWrap-div .featureImage-div {
+    grid-area: 1/1/span 1/span 1;
+  }
+  #featuresAndQuestions-section #features-div #downloadFeature-div .contentWrap-div .featureImage-div .imageInner-div {
+    padding: 0.5rem 0.75rem;
+  }
+  #featuresAndQuestions-section #features-div #downloadFeature-div .contentWrap-div .featureImage-div .imageInner-div img:nth-of-type(1) {
+    height: 72px;
+  }
+  #featuresAndQuestions-section #questions-div {
+    position: relative;
+    padding: 72px 0;
+  }
+  #featuresAndQuestions-section #questions-div .contentWrap-div {
+    margin: 0 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #featuresAndQuestions-section #features-div .feature-div .contentWrap-div,
+  #featuresAndQuestions-section #questions-div .contentWrap-div {
+    max-width: calc(83.3% - 6rem);
+    margin: auto;
+  }
+  #featuresAndQuestions-section #features-div #downloadFeature-div .contentWrap-div .featureImage-div .imageInner-div {
+    grid-template-columns: 72px 2.2fr 48px;
+    width: 55%;
+  }
+  #featuresAndQuestions-section #features-div #downloadFeature-div .contentWrap-div .featureImage-div .imageInner-div img:nth-of-type(1) {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #featuresAndQuestions-section #features-div .feature-div .contentWrap-div,
+  #featuresAndQuestions-section #questions-div .contentWrap-div {
+    max-width: calc(66.66% - 6rem);
+    margin: auto;
   }
 }
 footer {
@@ -503,8 +622,11 @@ footer .phoneInformation-div {
 footer ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 11px 12px;
+  gap: 1rem 12px;
   margin-bottom: 1.5rem;
+}
+footer ul li {
+  line-height: 1.1;
 }
 footer ul a {
   font-size: 14px;
@@ -517,5 +639,25 @@ footer ul a:focus {
 @media screen and (min-width: 600px) {
   footer {
     padding: 0 32px;
+  }
+}
+@media screen and (min-width: 960px) {
+  footer {
+    margin: 72px 0;
+  }
+  footer ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer {
+    max-width: calc(90% - 6rem);
+    margin: 72px auto;
+    padding: 0 48px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  footer {
+    max-width: calc(71% - 6rem);
   }
 }/*# sourceMappingURL=main.css.map */
