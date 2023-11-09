@@ -28,19 +28,37 @@
             font-weight: 500;
         }
     }
-}
 
-@media screen and (max-width:599px) {
-    .languageSelector-div {
-        width: 64px;
-        .form-select {
-            padding: 6px 27px 6px 35px;
+    @media screen and (max-width:599px) {
+        .languageSelector-div {
+            width: 64px;
+            .form-select {
+                padding: 6px 27px 6px 35px;
+            }
         }
     }
-}
-
-@media screen and (min-width:600px) {
-    #header-section {
+    
+    @media screen and (min-width:600px) {
         header {padding:24px 32px}
+    }
+    
+    @media screen and (min-width: 960px) {
+        header {
+            > img {
+                height: 40px;
+                width: auto;
+            }
+            .buttonGroup-div {
+                gap: 1.5rem;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 1280px) {
+        header {
+            max-width: calc(90% - 6rem); //calc(83.3% - 6rem);
+            padding: 24px 48px;
+            margin: auto;
+        }
     }
 }
