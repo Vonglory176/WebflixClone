@@ -15,8 +15,10 @@ footer {
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 11px 12px;
+        gap: 1rem 12px; //18px 8rem;
         margin-bottom: 1.5rem;
+
+        li {line-height: 1.10}
 
         a {
             font-size: 14px;
@@ -27,7 +29,30 @@ footer {
 }
 
 @media screen and (min-width:600px) {
+    footer {padding: 0 32px;}
+}
+
+@media screen and (min-width:960px) {
     footer {
-        padding: 0 32px;
+        margin: 72px 0;
+
+        ul {grid-template-columns: 1fr 1fr 1fr 1fr;}
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    footer {
+        max-width: calc(90% - 6rem); //calc(83.3% - 6rem);
+        // padding: 24px 48px;
+        margin: 72px auto;
+        padding: 0 48px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    footer {
+        max-width: calc(71% - 6rem); //calc(83.3% - 6rem);
+
+        // margin: 72px auto;
     }
 }
