@@ -2,9 +2,10 @@ body {background-color: black;}
 
 * {
     font-family: "Netflix Sans",Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-    color: white;
+    // color: white;
 }
 
+h1, h3, p, span {color:white} //Maybe revert?
 
 h1 {
     text-align: center;
@@ -15,20 +16,33 @@ h1 {
 }
 
 h3 {
+    text-align: center;
+    font-size: 1.125rem;
     line-height: 1.5;
     font-weight: 300;
     margin: 0;
 }
 
 p {
+    text-align: center;
+    font-size: 1.125rem;
     font-weight: 400;
     margin: 16px 0 0 0; //1.25rem 0 0 0
     line-height: 1.25;
 }
 
-h3, p {
-    text-align: center;
-    font-size: 1.125rem;
+@media screen and (min-width:960px) {
+    h1 {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    p {
+        font-size: 24px;
+    }
 }
 
 .btn {
@@ -53,11 +67,12 @@ h3, p {
         padding:24px;
 
         &::after {
-            background-image: url("../assets/images/plusIcon.svg") !important;
+            background-image: url("../assets/images/plusIcon.svg");
             background-size: 24px;
             width: 24px;
             height: 24px;
             transition: none;
+            filter: invert(1); /* This will make the SVG white */
         } 
 
         &:focus {
@@ -67,6 +82,15 @@ h3, p {
 
         &:not(.collapsed)::after {
             rotate: -45deg;
+        }
+
+        @media screen and (min-width:960px) {
+            & {font-size: 24px;}
+            &::after {
+                background-size: 36px;
+                width: 36px;
+                height: 36px;
+            }
         }
     }
 
