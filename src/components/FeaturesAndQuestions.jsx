@@ -74,8 +74,10 @@ export default function FeaturesAndQuestions() {
             <div id="features-div">
                 <div id="tvFeature-div" className="feature-div">
                     <div className="contentWrap-div">
-                        <h1>Enjoy on your TV</h1>
-                        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                        <div className="featureTitle-div">                            
+                            <h1>Enjoy on your TV</h1>
+                            <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                        </div>
                         <div id="tvFeatureImage-div" className="featureImage-div">
                             <img src={TVImage} className="img-fluid"/>
                             <div className="videoWrapper-div">
@@ -88,8 +90,10 @@ export default function FeaturesAndQuestions() {
 
                 <div id="watchFeature-div" className="feature-div">
                     <div className="contentWrap-div">
-                        <h1>Watch everywhere</h1>
-                        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                        <div className="featureTitle-div">                            
+                            <h1>Watch everywhere</h1>
+                            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                        </div>
                         <div id="watchFeatureImage-div" className="featureImage-div">
                             <img src={WatchImage} className="img-fluid"/>
                             <div className="videoWrapper-div">
@@ -102,8 +106,10 @@ export default function FeaturesAndQuestions() {
 
                 <div id="createFeature-div" className="feature-div">
                     <div className="contentWrap-div">
-                        <h1>Create profiles for kids</h1>
-                        <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+                        <div className="featureTitle-div">                            
+                            <h1>Create profiles for kids</h1>
+                            <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+                        </div>
                         <div className="featureImage-div">
                             <img src={CreateImage} className="img-fluid"/>
                         </div>
@@ -113,8 +119,10 @@ export default function FeaturesAndQuestions() {
 
                 <div id="downloadFeature-div" className="feature-div">
                     <div className="contentWrap-div">
-                        <h1>Download your shows to watch offline</h1>
-                        <p>Only available on ad-free plans.</p>
+                        <div className="featureTitle-div">                            
+                            <h1>Download your shows to watch offline</h1>
+                            <p>Only available on ad-free plans.</p>
+                        </div>
 
                         <div className="featureImage-div">
                             <img src={DownloadImage1} className="img-fluid"/>
