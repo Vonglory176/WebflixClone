@@ -1,5 +1,6 @@
 import { Button, Form } from "react-bootstrap";
-import RightArrow from "../assets/images/RightArrow.svg"
+// import RightArrow from "../assets/images/RightArrow.svg"
+import RightArrowSVG from "../assets/images/rightArrow";
 
 export default function EmailSignUp() {
     return (
@@ -11,7 +12,8 @@ export default function EmailSignUp() {
             </Form.Group>
             <Button type="submit" size="lg">
                 Get Started
-                <img src={RightArrow}/>
+                {/* <img src={RightArrow}/> */}
+                <RightArrowSVG/>
             </Button>
         </Form>
     </div>

@@ -1,5 +1,6 @@
 import Popcorn from "../assets/images/Popcorn.svg"
-import RightArrow from "../assets/images/RightArrow.svg"
+// import RightArrow from "../assets/images/RightArrow.svg"
+import RightArrowSVG from "../assets/images/rightArrow"
 
 export default function AddBanner() {
     return (
@@ -9,7 +10,7 @@ export default function AddBanner() {
                 <div id="adContentWrapper-div">
                     <p>The Netflix you love for just $6.99.</p>
                     <p>Get the Standard with ads plan.</p>
-                    <a href="#">Learn More <img src={RightArrow}/></a>
+                    <a href="#">Learn More<RightArrowSVG/>{/*<img src={RightArrow}/>*/}</a> 
                 </div>
             </div>
         </section>
