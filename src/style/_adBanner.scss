@@ -52,7 +52,7 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-
+            
             padding: 22px 22px 26px;
             margin: 0 74px;
 
@@ -102,5 +102,6 @@
         position: absolute;
         transform: translateY(-50%);
         width: 100%;
+        z-index: 1;
     }
 }
