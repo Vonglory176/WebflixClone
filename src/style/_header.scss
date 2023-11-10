@@ -56,9 +56,9 @@
     
     @media screen and (min-width: 1280px) {
         header {
-            max-width: calc(90% - 6rem); //calc(83.3% - 6rem);
-            padding: 24px 48px;
+            max-width: calc(83.3% - 6rem); //calc(83.3% - 6rem); //calc(90% - 6rem);
             margin: auto;
+            padding: 24px 48px;
         }
     }
 }
