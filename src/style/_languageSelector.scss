@@ -3,7 +3,7 @@
     background-color: rgba(22,22,22,0.7);
     background-image: url("../assets/images/languageIcon.svg");
     background-repeat: no-repeat;
-    background-position: top 7.5px left 12px;
+    background-position: top 7.5px left 13px;
     width: fit-content;
 
     // img {
@@ -14,16 +14,22 @@
     // }
 
     .form-select {
-        --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-        &:focus {border-color: white}
+        // --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+        --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' color='white' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+        background-position-y: 11px;
+        // &:focus {border-color: white}
         background-color: rgba(22,22,22,0.0);
         height: 32px;
         max-width: fit-content;
-        padding: 6px 36px 6px 36px;
-        font-weight: 500;
-        font-size: 15px;
+        padding: 5px 35px 5px 36px;
+        font-weight: 400;
+        font-size: 16px;
+        color: white !important;
         line-height: 1.25;
         z-index: 1;
-        // padding: 0.375rem 0.75rem 2.25rem 0.375rem;
+
+        option {
+            color: white !important;
+        }
     }
 }
