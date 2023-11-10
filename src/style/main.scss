@@ -151,7 +151,7 @@ p {
 
 input, select {
     position: relative;
-    &:not(select){background-color: rgba(22,22,22,0.7) !important;}
+    // &:not(select){background-color: rgba(22,22,22,0.7) !important;}
     border-color: rgba(128,128,128,0.7) !important;
     box-shadow: none !important;
     transition: none !important;
