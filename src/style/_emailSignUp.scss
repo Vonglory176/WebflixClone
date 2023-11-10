@@ -12,25 +12,27 @@
         max-width: 586px;
         margin: auto;
         .inputWrapper {
+            background-color: rgba(22,22,22,0.7) !important;
+
             &::after {
                 content:"Email address";
                 color: rgba(255, 255, 255, 0.7);
                 position: absolute;
                 line-height: 1.5;
-                top: 1rem;
+                top: 0.75rem;
                 left: 1rem;
                 right: 1rem;
                 transition-duration: 250ms;
-
-
             }
             &:focus-within::after {
-                top:0.5rem;
+                top:0.25rem;
                 font-size: 0.75rem;
             }
     
             input {
                 width: 100%;
+                z-index: 1;
+                background-color: rgb(0, 0, 0, 0);
                 padding: 18px 16px 4px 16px; //20px 16px 4px 16px; !!Temp fix!!
             }
         }
@@ -72,6 +74,9 @@
                 input {
                     padding: 22px 16px 8px 16px; //24px 16px 8px 16px; !!Temp fix!!
                 }
+
+                &::after {top: 1rem;}
+                &:focus-within::after {top:0.5rem;}
             }
 
             button {
