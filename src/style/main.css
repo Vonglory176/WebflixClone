@@ -49,9 +49,22 @@ p {
   }
 }
 .btn {
+  position: relative;
   border: 0 !important;
   --bs-btn-border-radius: 0.1875rem !important;
   background-color: rgb(229, 9, 20);
+}
+.btn:hover, .btn:active {
+  background-color: rgb(193, 17, 25) !important;
+}
+.btn:active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .accordion {
@@ -60,6 +73,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  --bs-accordion-transition: all 0.25s ease-in-out cubic-bezier(0.5, 0, 0.1, 1) 0s !important;
 }
 .accordion .accordion-button {
   background-color: rgb(45, 45, 45);
@@ -68,6 +82,7 @@ p {
   font-weight: 300;
   line-height: 1.5;
   padding: 24px;
+  box-shadow: none;
 }
 .accordion .accordion-button::after {
   background-image: url("../assets/images/plusIcon.svg");
@@ -77,8 +92,7 @@ p {
   transition: none;
   filter: invert(1); /* This will make the SVG white */
 }
-.accordion .accordion-button:focus {
-  box-shadow: none;
+.accordion .accordion-button:hover, .accordion .accordion-button:active {
   background-color: rgb(64, 64, 64);
 }
 .accordion .accordion-button:not(.collapsed)::after {
@@ -107,11 +121,37 @@ p {
 .accordion .accordion-body p:first-child {
   margin-top: 0;
 }
+.accordion .accordion-body p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 960px) {
+  .accordion .accordion-body p:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
 
-input {
+.inputWrapper {
+  position: relative;
+}
+.inputWrapper:focus-within:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid white !important;
+  border-radius: 0.5rem !important;
+}
+
+input, select {
+  position: relative;
+  border-color: rgba(128, 128, 128, 0.7) !important;
+  box-shadow: none !important;
+  transition: none !important;
+}
+input:not(select), select:not(select) {
   background-color: rgba(22, 22, 22, 0.7) !important;
-  transition: none;
-  border-color: rgba(128, 128, 128, 0.7);
 }
 
 .separator-div {
@@ -165,24 +205,26 @@ li {
   background-color: rgba(22, 22, 22, 0.7);
   background-image: url("../assets/images/languageIcon.svg");
   background-repeat: no-repeat;
-  background-position: top 7.5px left 12px;
+  background-position: top 7.5px left 13px;
   width: -moz-fit-content;
   width: fit-content;
 }
 .languageSelector-div .form-select {
-  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' color='white' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-position-y: 11px;
   background-color: rgba(22, 22, 22, 0);
   height: 32px;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  padding: 6px 36px 6px 36px;
-  font-weight: 500;
-  font-size: 15px;
+  padding: 5px 35px 5px 36px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white !important;
   line-height: 1.25;
   z-index: 1;
 }
-.languageSelector-div .form-select:focus {
-  border-color: white;
+.languageSelector-div .form-select option {
+  color: white !important;
 }
 
 .emailSignUp-div {
@@ -198,7 +240,21 @@ li {
   max-width: 586px;
   margin: auto;
 }
-.emailSignUp-div form input {
+.emailSignUp-div form .inputWrapper::after {
+  content: "Email address";
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  line-height: 1.5;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  transition-duration: 250ms;
+}
+.emailSignUp-div form .inputWrapper:focus-within::after {
+  top: 0.5rem;
+  font-size: 0.75rem;
+}
+.emailSignUp-div form .inputWrapper input {
   width: 100%;
   padding: 18px 16px 4px 16px;
 }
@@ -229,7 +285,7 @@ li {
     justify-content: space-between;
     gap: 8px;
   }
-  .emailSignUp-div form input {
+  .emailSignUp-div form .inputWrapper input {
     padding: 22px 16px 8px 16px;
   }
   .emailSignUp-div form button {
@@ -288,9 +344,9 @@ li {
 }
 @media screen and (min-width: 1280px) {
   #header-section header {
-    max-width: calc(90% - 6rem);
-    padding: 24px 48px;
+    max-width: calc(83.3% - 6rem);
     margin: auto;
+    padding: 24px 48px;
   }
 }
 
@@ -434,6 +490,7 @@ li {
     position: absolute;
     transform: translateY(-50%);
     width: 100%;
+    z-index: 1;
   }
 }
 #featuresAndQuestions-section #features-div .feature-div {
