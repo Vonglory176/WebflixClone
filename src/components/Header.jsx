@@ -1,4 +1,4 @@
-import NetflixLogo from "../assets/images/netflixLogo.svg"
+import NetflixLogo from "../assets/images/Netflix_Clone_Logo_PMS.png" //netflixLogo.svg"
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "react-bootstrap";
 
