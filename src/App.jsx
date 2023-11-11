@@ -4,6 +4,7 @@ import Landing from './components/Landing.jsx'
 import AdBanner from './components/AdBanner.jsx'
 import FeaturesAndQuestions from './components/FeaturesAndQuestions.jsx'
 import Footer from './components/Footer.jsx'
+import CopyrightBanner from './components/CopyrightBanner.jsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <AdBanner/>
       <FeaturesAndQuestions/>
       <Footer/>
+      <CopyrightBanner/>
     </>
   )
 }
