@@ -1,4 +1,7 @@
 import { useState } from 'react'
+// import ReactDOM from 'react-dom/client.js'
+// import { BrowserRouter } from 'react-router-dom'
+
 import Header from './components/header.jsx'
 import Landing from './components/Landing.jsx'
 import AdBanner from './components/AdBanner.jsx'
@@ -29,11 +32,10 @@ TODO
 -------------------
 Right now!
 ------
-Fix email issues
+Fix email Accept/Reject colors and messages
 
 Later!
 ------
-Fix email Accept/Reject colors and messages
 Fix Header positioning in 1280px+ viewport (Bootstrap related issue)
 Convert feature-divs & question-divs to a proper component
 
