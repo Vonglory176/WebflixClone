@@ -241,7 +241,7 @@ li {
   background-color: rgba(22, 22, 22, 0.7) !important;
 }
 .emailSignUp-div form .inputWrapper::after {
-  content: "Email address";
+  content: "Email address (Disabled)";
   color: rgba(255, 255, 255, 0.7);
   position: absolute;
   line-height: 1.5;
@@ -724,4 +724,29 @@ footer ul a:focus {
   footer {
     max-width: calc(71% - 6rem);
   }
+}
+#loginPage-div header img {
+  height: 40px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 3%;
+}
+#loginPage-div #login-section {
+  padding: 5%;
+}
+#loginPage-div #login-section p, #loginPage-div #login-section span, #loginPage-div #login-section h1 {
+  text-align: left;
+}
+#loginPage-div #login-section h1 {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+#loginPage-div #login-section input {
+  padding: 1rem 20px 0px 20px;
+  margin-bottom: 1rem;
+}
+#loginPage-div #login-section button {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
