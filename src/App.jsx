@@ -1,24 +1,17 @@
 import { useState } from 'react'
-// import ReactDOM from 'react-dom/client.js'
-// import { BrowserRouter } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
 
-import Header from './components/header.jsx'
-import Landing from './components/Landing.jsx'
-import AdBanner from './components/AdBanner.jsx'
-import FeaturesAndQuestions from './components/FeaturesAndQuestions.jsx'
-import Footer from './components/Footer.jsx'
-import CopyrightBanner from './components/CopyrightBanner.jsx'
+//https://hygraph.com/blog/routing-in-react
 
 function App() {
-
   return (
     <>
-      <Header/>
-      <Landing/>
-      <AdBanner/>
-      <FeaturesAndQuestions/>
-      <Footer/>
-      <CopyrightBanner/>
+      <Routes>
+        <Route path="/NetflixClone" element={<HomePage/>} />
+        <Route path="/NetflixClone/Login" element={<LoginPage/>} />
+      </Routes>
     </>
   )
 }
