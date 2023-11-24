@@ -7,7 +7,7 @@ export default function LanguageSelector() {
         {/* <img src={LanguageIcon} alt="Language Icon"/> */}
         <Form.Select aria-label="Language Selector" size="sm" data-bs-theme="light">
             <option>English</option>
-            <option>Español</option>
+            {/* <option>Español</option> */}
         </Form.Select>
     </div>
     )
