@@ -1,0 +1,31 @@
+#loginPage-div {
+    header img {
+        height:40px;
+        padding-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 3%;
+    }
+
+    #login-section {
+        padding: 5%;
+        p, span, h1 {
+            text-align: left;
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 28px;
+        }
+
+        input {
+            padding: 1rem 20px 0px 20px;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+}
