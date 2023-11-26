@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/NetflixClone" element={<HomePage/>} />
-        <Route path="/NetflixClone/Login" element={<LoginPage/>} />
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/login" element={<LoginPage/>} />
       </Routes>
     </>
   )
@@ -31,10 +31,13 @@ Later!
 ------
 (Login Page)
 Fix email input differences
+Change login "Remember me" checkbox styling
 Change footer text/link content
 Change footer language selector styling
+Fix footer margin
 
 (Home Page)
+MOBILE issue with videos in features
 Fix email Accept/Reject colors and messages
 Fix email input issue where input text clashes with label when not in focus
 Fix Header positioning in 1280px+ viewport (Bootstrap related issue)
