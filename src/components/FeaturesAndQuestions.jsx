@@ -81,7 +81,7 @@ export default function FeaturesAndQuestions() {
                         <div id="tvFeatureImage-div" className="featureImage-div">
                             <img src={TVImage} className="img-fluid"/>
                             <div className="videoWrapper-div">
-                                <video src={TVVideo} muted loop autoPlay/>
+                                <video src={TVVideo} muted loop autoPlay playsInline/>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ export default function FeaturesAndQuestions() {
                         <div id="watchFeatureImage-div" className="featureImage-div">
                             <img src={WatchImage} className="img-fluid"/>
                             <div className="videoWrapper-div">
-                                <video src={WatchVideo} muted loop autoPlay/>
+                                <video src={WatchVideo} muted loop autoPlay playsInline/>
                             </div>
                         </div>
                     </div>
