@@ -794,12 +794,14 @@ footer ul a:focus {
   display: flex;
 }
 #loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div div label {
-  margin-left: 5px;
+  margin-left: 15px;
 }
 #loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div div input {
-  margin: 0;
-  width: 16px;
-  height: 16px;
+  margin: 0 -10px 0 0 !important;
+  padding: 0 !important;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
 }
 #loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div div input::before {
   background: #737373;
