@@ -257,7 +257,11 @@ li {
   background-color: rgba(0, 0, 0, 0);
   padding: 18px 16px 4px 16px;
 }
-.emailSignUp-div form button {
+.emailSignUp-div form a {
+  text-decoration: none;
+  display: flex;
+}
+.emailSignUp-div form a button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -293,7 +297,7 @@ li {
   .emailSignUp-div form .inputWrapper:focus-within::after {
     top: 0.5rem;
   }
-  .emailSignUp-div form button {
+  .emailSignUp-div form a button {
     padding: 12px 24px;
     font-size: 1.5rem;
     line-height: 1;
@@ -313,7 +317,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-#header-section header > img {
+#header-section header img {
   height: 1.5rem;
 }
 #header-section header .buttonGroup-div {
@@ -338,7 +342,7 @@ li {
   }
 }
 @media screen and (min-width: 960px) {
-  #header-section header > img {
+  #header-section header img {
     height: 40px;
     width: auto;
   }
@@ -722,6 +726,12 @@ footer ul a:focus {
     max-width: calc(71% - 6rem);
   }
 }
+#loginPage-div a {
+  text-decoration: none;
+}
+#loginPage-div a:hover {
+  text-decoration: underline;
+}
 #loginPage-div header {
   padding-top: 20px;
 }
@@ -732,7 +742,6 @@ footer ul a:focus {
   line-height: 75px;
 }
 #loginPage-div #login-section {
-  position: relative;
   border-bottom: 1px solid #737373;
 }
 #loginPage-div #login-section .loginWrapper-div {
@@ -744,24 +753,34 @@ footer ul a:focus {
 #loginPage-div #login-section .loginWrapper-div form {
   flex-grow: 1;
 }
-#loginPage-div #login-section .loginWrapper-div form .inputWrapper input {
-  height: 50px;
-  border: none;
-  background-color: #333;
+#loginPage-div #login-section .loginWrapper-div form .inputWrapper {
+  position: relative;
 }
-#loginPage-div #login-section .loginWrapper-div form .inputWrapper input::after {
-  content: "Email address (Disabled)";
+#loginPage-div #login-section .loginWrapper-div form .inputWrapper::after {
   color: rgba(255, 255, 255, 0.7);
   position: absolute;
+  font-size: 1rem;
+  color: #8c8c8c;
   line-height: 1.5;
   top: 0.75rem;
   left: 1rem;
   right: 1rem;
   transition-duration: 250ms;
 }
-#loginPage-div #login-section .loginWrapper-div form .inputWrapper input:focus-within::after {
+#loginPage-div #login-section .loginWrapper-div form .inputWrapper:nth-of-type(1)::after {
+  content: "Email address (Disabled)";
+}
+#loginPage-div #login-section .loginWrapper-div form .inputWrapper:nth-of-type(2)::after {
+  content: "Password (Disabled)";
+}
+#loginPage-div #login-section .loginWrapper-div form .inputWrapper:focus-within::after {
   top: 0.25rem;
   font-size: 0.75rem;
+}
+#loginPage-div #login-section .loginWrapper-div form .inputWrapper input {
+  height: 50px;
+  border: none;
+  background-color: #333;
 }
 #loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div {
   display: flex;
@@ -779,11 +798,14 @@ footer ul a:focus {
 }
 #loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div div input {
   margin: 0;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
-#loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div p {
-  color: #737373;
+#loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div div input::before {
+  background: #737373;
+}
+#loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div p, #loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div a {
+  color: #b3b3b3;
 }
 #loginPage-div #login-section .loginWrapper-div p:nth-of-type(1) {
   font-size: 16px;
@@ -797,8 +819,8 @@ footer ul a:focus {
   color: #737373;
   font-size: 13px;
 }
-#loginPage-div #login-section .loginWrapper-div p:nth-of-type(2) a {
-  text-decoration: none;
+#loginPage-div #login-section .loginWrapper-div p:nth-of-type(2) a, #loginPage-div #login-section .loginWrapper-div p:nth-of-type(2) a:hover, #loginPage-div #login-section .loginWrapper-div p:nth-of-type(2) a:visited {
+  color: #0d6efd;
 }
 #loginPage-div #login-section p, #loginPage-div #login-section span, #loginPage-div #login-section h1 {
   text-align: left;
@@ -820,14 +842,13 @@ footer ul a:focus {
   margin-top: 24px;
 }
 #loginPage-div footer {
-  margin: 0 auto !important;
+  margin: auto auto 0 auto !important;
   padding: 30px calc(30px + 5%) 30px calc(30px + 5%);
 }
 #loginPage-div footer span, #loginPage-div footer a {
   color: #737373;
 }
 #loginPage-div footer a {
-  text-decoration: none;
   font-size: 13px;
 }
 @media screen and (min-width: 441px) {
@@ -856,6 +877,7 @@ footer ul a:focus {
     line-height: 90px;
   }
   #loginPage-div #login-section {
+    min-height: calc(100vh - 170px);
     border: none;
   }
   #loginPage-div #login-section .loginWrapper-div {
