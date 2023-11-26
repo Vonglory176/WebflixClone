@@ -1,4 +1,4 @@
-import Header from '../components/header.jsx'
+import Header from '../components/Header.jsx'
 import Landing from '../components/Landing.jsx'
 import AdBanner from '../components/AdBanner.jsx'
 import FeaturesAndQuestions from '../components/FeaturesAndQuestions.jsx'
