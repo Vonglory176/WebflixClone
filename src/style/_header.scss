@@ -11,7 +11,7 @@
         justify-content: space-between;
         align-items: center;
         
-        > img {
+        img {
             // width: 89px;
             height: 1.5rem;
         }
@@ -44,7 +44,7 @@
     
     @media screen and (min-width: 960px) {
         header {
-            > img {
+            img {
                 height: 40px;
                 width: auto;
             }
