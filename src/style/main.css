@@ -220,9 +220,6 @@ li {
   line-height: 1.25;
   z-index: 1;
 }
-.languageSelector-div .form-select option {
-  color: white !important;
-}
 
 .emailSignUp-div {
   padding: 0 24px;
@@ -725,14 +722,83 @@ footer ul a:focus {
     max-width: calc(71% - 6rem);
   }
 }
-#loginPage-div header img {
-  height: 40px;
+#loginPage-div header {
   padding-top: 20px;
+}
+#loginPage-div header img {
+  height: 20px;
   margin-bottom: 5px;
   margin-left: 3%;
+  line-height: 75px;
 }
 #loginPage-div #login-section {
-  padding: 5%;
+  position: relative;
+  border-bottom: 1px solid #737373;
+}
+#loginPage-div #login-section .loginWrapper-div {
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+  padding: 20px 5% 30px 5%;
+}
+#loginPage-div #login-section .loginWrapper-div form {
+  flex-grow: 1;
+}
+#loginPage-div #login-section .loginWrapper-div form .inputWrapper input {
+  height: 50px;
+  border: none;
+  background-color: #333;
+}
+#loginPage-div #login-section .loginWrapper-div form .inputWrapper input::after {
+  content: "Email address (Disabled)";
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  line-height: 1.5;
+  top: 0.75rem;
+  left: 1rem;
+  right: 1rem;
+  transition-duration: 250ms;
+}
+#loginPage-div #login-section .loginWrapper-div form .inputWrapper input:focus-within::after {
+  top: 0.25rem;
+  font-size: 0.75rem;
+}
+#loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #b3b3b3;
+}
+#loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div div {
+  display: flex;
+}
+#loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div div label {
+  margin-left: 5px;
+}
+#loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div div input {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+#loginPage-div #login-section .loginWrapper-div form #loginRememberMe-div p {
+  color: #737373;
+}
+#loginPage-div #login-section .loginWrapper-div p:nth-of-type(1) {
+  font-size: 16px;
+  color: #737373;
+}
+#loginPage-div #login-section .loginWrapper-div p:nth-of-type(1) a {
+  color: white;
+}
+#loginPage-div #login-section .loginWrapper-div p:nth-of-type(2) {
+  margin: 13px 0 83.25px 0;
+  color: #737373;
+  font-size: 13px;
+}
+#loginPage-div #login-section .loginWrapper-div p:nth-of-type(2) a {
+  text-decoration: none;
 }
 #loginPage-div #login-section p, #loginPage-div #login-section span, #loginPage-div #login-section h1 {
   text-align: left;
@@ -749,4 +815,68 @@ footer ul a:focus {
 }
 #loginPage-div #login-section button {
   width: 100%;
+  font-size: 16px;
+  padding: 13px;
+  margin-top: 24px;
+}
+#loginPage-div footer {
+  margin: 0 auto !important;
+  padding: 30px calc(30px + 5%) 30px calc(30px + 5%);
+}
+#loginPage-div footer span, #loginPage-div footer a {
+  color: #737373;
+}
+#loginPage-div footer a {
+  text-decoration: none;
+  font-size: 13px;
+}
+@media screen and (min-width: 441px) {
+  #loginPage-div header {
+    line-height: 75px;
+    padding: 0;
+  }
+  #loginPage-div header img {
+    margin-bottom: 0;
+    height: 45px;
+    padding-top: 0px;
+  }
+}
+@media screen and (min-width: 501px) {
+  #loginPage-div ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 741px) {
+  #loginPage-div {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/US-en-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+  }
+  #loginPage-div header {
+    line-height: 90px;
+  }
+  #loginPage-div #login-section {
+    border: none;
+  }
+  #loginPage-div #login-section .loginWrapper-div {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 60px 68px 40px 68px;
+    max-width: 450px;
+    margin: 0 auto 90px auto;
+  }
+  #loginPage-div #login-section .loginWrapper-div form {
+    margin-bottom: 50px;
+  }
+  #loginPage-div #footerWrapper-div {
+    background: rgba(0, 0, 0, 0.75);
+  }
+  #loginPage-div #footerWrapper-div footer {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+  }
+  #loginPage-div #footerWrapper-div footer ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=main.css.map */
