@@ -7,10 +7,12 @@ export default function Header() {
     return (
     <section id="header-section">
         <header>
-            <img src={NetflixLogo} alt="Netflix Logo"/>
+            <Link to="/">
+                <img src={NetflixLogo} alt="NetflixClone Logo"/>
+            </Link>
             <div className="buttonGroup-div">
                 <LanguageSelector/>
-                <Link to="/NetflixClone/Login">
+                <Link to="/login">
                     <Button variant="danger" size="sm" style={{height:"100%"}}>Sign In</Button>
                 </Link>
             </div>
