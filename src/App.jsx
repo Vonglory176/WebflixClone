@@ -25,10 +25,18 @@ TODO
 -------------------
 Right now!
 ------
-Fix email Accept/Reject colors and messages
+Finish general jazz for mobile sign-in view
 
 Later!
 ------
+(Login Page)
+Fix email input differences
+Change footer text/link content
+Change footer language selector styling
+
+(Home Page)
+Fix email Accept/Reject colors and messages
+Fix email input issue where input text clashes with label when not in focus
 Fix Header positioning in 1280px+ viewport (Bootstrap related issue)
 Convert feature-divs & question-divs to a proper component
 
