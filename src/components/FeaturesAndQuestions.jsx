@@ -79,7 +79,7 @@ export default function FeaturesAndQuestions() {
                             <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
                         </div>
                         <div id="tvFeatureImage-div" className="featureImage-div">
-                            <img src={TVImage} className="img-fluid"/>
+                            <img src={TVImage} className="img-fluid" alt="A TV with Netflix on it"/>
                             <div className="videoWrapper-div">
                                 <video src={TVVideo} muted loop autoPlay playsInline/>
                             </div>
@@ -95,7 +95,7 @@ export default function FeaturesAndQuestions() {
                             <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
                         </div>
                         <div id="watchFeatureImage-div" className="featureImage-div">
-                            <img src={WatchImage} className="img-fluid"/>
+                            <img src={WatchImage} className="img-fluid" alt="A computer, phone and tablet"/>
                             <div className="videoWrapper-div">
                                 <video src={WatchVideo} muted loop autoPlay playsInline/>
                             </div>
@@ -111,7 +111,7 @@ export default function FeaturesAndQuestions() {
                             <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
                         </div>
                         <div className="featureImage-div">
-                            <img src={CreateImage} className="img-fluid"/>
+                            <img src={CreateImage} className="img-fluid" alt="A picture of happy kids and rabbit"/>
                         </div>
                     </div>
                     <div className="separator-div"></div>
@@ -125,15 +125,15 @@ export default function FeaturesAndQuestions() {
                         </div>
 
                         <div className="featureImage-div">
-                            <img src={DownloadImage1} className="img-fluid"/>
+                            <img src={DownloadImage1} className="img-fluid" alt="A phone with an image of a girl and fireworks"/>
 
                             <div className="imageInner-div">
-                                <img src={DownloadImage2} className="img-fluid"/>
+                                <img src={DownloadImage2} className="img-fluid" alt="A poster of the show Stranger Things"/>
                                 <div>
                                     <span>Stranger Things</span>
                                     <span>Downloading...</span>
                                 </div>
-                                <img src={DownloadImage3} className="img-fluid"/>
+                                <img src={DownloadImage3} className="img-fluid" alt="A mock download animation"/>
                             </div>
                         </div>
                     </div>
