@@ -25,7 +25,6 @@ TODO
 -------------------
 Right now!
 ------
-Finish general jazz for mobile sign-in view
 
 Later!
 ------
@@ -37,19 +36,15 @@ Change footer language selector styling
 Fix footer margin
 
 (Home Page)
-MOBILE issue with videos in features
 Fix email Accept/Reject colors and messages
 Fix email input issue where input text clashes with label when not in focus
 Fix Header positioning in 1280px+ viewport (Bootstrap related issue)
 Convert feature-divs & question-divs to a proper component
-
 Check image margin/padding in "Download" feature section
 Check landing section gradient media queries
 
+(General)
 Add Spanish translation?
-
-ALT tags on all images!
-Check Aria mumbo jumbo
-Run an HTML checker
+Check Aria stuff
 -------------------
 */
