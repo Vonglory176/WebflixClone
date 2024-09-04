@@ -19,41 +19,41 @@ import EmailSignUp from "./EmailSignUp";
 export default function FeaturesAndQuestions() {
     let accordianData = [
         {
-            title:<span>What is NetflixClone?</span>,
+            title:<span>What is Webflix?</span>,
             body:<span>
-                    <p>NetflixClone is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                    <p>Webflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
                     <p>You can watch as much as you want, whenever you want - all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
                 </span>
         },
         {
-            title:<span>How much does NetflixClone cost?</span>,
+            title:<span>How much does Webflix cost?</span>,
             body:<span>
-                    <p>Watch NetflixClone on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from $6.99 to $22.99 a month. No extra costs, no contracts.</p>
+                    <p>Watch Webflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from $6.99 to $22.99 a month. No extra costs, no contracts.</p>
                 </span>
         },
         {
             title:<span>What can I watch?</span>,
             body:<span>
-                    <p>Watch anywhere, anytime. Sign in with your NetflixClone account to watch instantly on the web at netflixclone.com from your personal computer or on any internet-connected device that offers the NetflixClone app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
-                    <p>You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take NetflixClone with you anywhere.</p>
+                    <p>Watch anywhere, anytime. Sign in with your Webflix account to watch instantly on the web at Webflix.com from your personal computer or on any internet-connected device that offers the Webflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                    <p>You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Webflix with you anywhere.</p>
                 </span>
         },
         {
             title:<span>How do I cancel?</span>,
             body:<span>
-                    <p>NetflixClone is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.</p>
+                    <p>Webflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.</p>
                 </span>
         },
         {
-            title:<span>What can I watch on NetflixClone?</span>,
+            title:<span>What can I watch on Webflix?</span>,
             body:<span>
-                    <p>NetflixClone has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                    <p>Webflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Webflix originals, and more. Watch as much as you want, anytime you want.</p>
                 </span>
         },
         {
-            title:<span>Is NetflixClone good for kids?</span>,
+            title:<span>Is Webflix good for kids?</span>,
             body:<span>
-                    <p>The NetflixClone Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.</p>
+                    <p>The Webflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.</p>
                     <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.</p>
                 </span>
         }
@@ -79,7 +79,7 @@ export default function FeaturesAndQuestions() {
                             <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
                         </div>
                         <div id="tvFeatureImage-div" className="featureImage-div">
-                            <img src={TVImage} className="img-fluid" alt="A TV with Netflix on it"/>
+                            <img src={TVImage} className="img-fluid" alt="A TV with Webflix on it"/>
                             <div className="videoWrapper-div">
                                 <video src={TVVideo} muted loop autoPlay playsInline/>
                             </div>

@@ -13,7 +13,7 @@ export default function Landing() {
             {/* <h1>Unlimited movies, TV shows, and more</h1> */}
             <h1>This is a sample site by Skyler Conley</h1>
             {/* <p>Watch anywhere. Cancel anytime.</p> */}
-            <p>Not actually Netflix. Just a portfolio project.</p>
+            <p>It has no affiliations to a similarly named streaming service.</p>
 
             <EmailSignUp/>
         </main>

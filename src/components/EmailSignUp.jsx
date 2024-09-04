@@ -10,7 +10,7 @@ export default function EmailSignUp() {
     return (
     <div className="emailSignUp-div">
         <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-        <Form data-bs-theme="dark"> {/* onSubmit={(e) => {e.preventDefault(); window.location.href='NetflixClone/Login'}} */}
+        <Form data-bs-theme="dark"> {/* onSubmit={(e) => {e.preventDefault(); window.location.href='WebflixClone/Login'}} */}
             <Form.Group className="inputWrapper" controlId="EmailSignUp">
                 <Form.Control type="email" required disabled/>
             </Form.Group>

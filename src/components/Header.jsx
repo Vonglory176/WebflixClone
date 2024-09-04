@@ -1,4 +1,4 @@
-import NetflixLogo from "../assets/images/Netflix_Clone_Logo_PMS.svg" //netflixLogo.svg"
+import WebflixLogo from "../assets/images/Webflix_Clone_Logo_PMS.png" //webflixLogo.svg"
 import { Link } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "react-bootstrap";
@@ -8,7 +8,7 @@ export default function Header() {
     <section id="header-section">
         <header>
             <Link to="/">
-                <img src={NetflixLogo} alt="NetflixClone Logo"/>
+                <img src={WebflixLogo} alt="WebflixClone Logo"/>
             </Link>
             <div className="buttonGroup-div">
                 <LanguageSelector/>

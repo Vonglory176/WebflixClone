@@ -8,9 +8,9 @@ export default function AddBanner() {
             <div id="adBanner-div">
                 <img src={Popcorn} id="adPopcorn-img" alt="Image of popcorn"/>
                 <div id="adContentWrapper-div">
-                    <p>The NetflixClone you love for just $6.99.</p>
+                    <p>The Webflix you love for just $6.99.</p>
                     <p>Get the Standard with ads plan.</p>
-                    <a href="https://github.com/Vonglory176/NetflixClone" target="_blank">View The Github Repo<RightArrowSVG/>{/*<img src={RightArrow}/>*/}</a> 
+                    <a href="https://github.com/Vonglory176/WebflixClone" target="_blank">View The Github Repo<RightArrowSVG/>{/*<img src={RightArrow}/>*/}</a> 
                 </div>
             </div>
         </section>

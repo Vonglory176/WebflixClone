@@ -1,5 +1,5 @@
 import Footer from '../components/Footer.jsx'
-import NetflixClone from "../assets/images/Netflix_Clone_Logo_PMS.svg"
+import Webflix from "../assets/images/Webflix_Clone_Logo_PMS.png"
 import CopyrightBanner from '../components/CopyrightBanner.jsx'
 import { Link } from 'react-router-dom'
 import { Form, Button } from 'react-bootstrap'
@@ -9,7 +9,7 @@ export default function Login() {
         <div id="loginPage-div">
             <header>
                 <Link to="/">
-                    <img src={NetflixClone} alt="NetflixClone Logo"/>
+                    <img src={Webflix} alt="Webflix Logo"/>
                 </Link>
             </header>
 
@@ -17,7 +17,7 @@ export default function Login() {
                 <div className="loginWrapper-div">
                     <h1>Sign In</h1>
 
-                    <Form data-bs-theme="dark"> {/* onSubmit={(e) => {e.preventDefault(); window.location.href='/NetflixClone'}} */}
+                    <Form data-bs-theme="dark"> {/* onSubmit={(e) => {e.preventDefault(); window.location.href='/WebflixClone'}} */}
                         <Form.Group className="inputWrapper" controlId="EmailSignIn">
                             <Form.Control type="email" required disabled/>
                         </Form.Group>
@@ -37,8 +37,8 @@ export default function Login() {
                             <a href="#">Need help?</a>
                         </div>
                     </Form>
-                    <p>New to NetflixClone? <a href="#">Sign Up Now</a>.</p>
-                    <p>Keep in mind that this is a portfolio project and not actually Netflix. Please do not enter any personal information. <a href="https://github.com/Vonglory176/NetflixClone" target="_blank">View The Github Repo.</a></p>
+                    <p>New to Webflix? <a href="#">Sign Up Now</a>.</p>
+                    <p>Keep in mind that this is a portfolio project and not actually Webflix. Please do not enter any personal information. <a href="https://github.com/Vonglory176/WebflixClone" target="_blank">View The Github Repo.</a></p>
 
                     {/* GOOGLE CAPTCHA LOGIN/NOTICE WOULD GO HERE */}
 
